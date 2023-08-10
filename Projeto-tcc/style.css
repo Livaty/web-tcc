@@ -79,15 +79,54 @@
     backdrop-filter: blur(15px);
     box-shadow: -1px 0 10px rgb(0, 0, 0, .2);
     border-left: 2px solid rgba(255, 255, 255, .1);
+    border-radius: 15px;
     z-index: 100;
     display: flex;
     justify-content: center;
     flex-direction: column;
     padding: 0 40px;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .wrapper.active-user{
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  .icon-close{
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+    padding-right: 15px;
+  }
+
+  .icon-close i{
+    font-size: 45px;
+    color: white;
   }
 
   .wrapper .form-box.login{
+    display: block;
+  }
+
+  .wrapper.active .form-box.login{
     display: none;
+  }
+
+  .wrapper .form-box.registro{
+    display: none;
+  }
+
+  .wrapper.active .form-box.registro{
+    display: block;
   }
 
   .wrapper .logreg-box {
