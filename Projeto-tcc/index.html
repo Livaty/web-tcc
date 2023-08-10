@@ -12,18 +12,100 @@
 
 <body>
     <header class="header">
-        <a href="#" class="logo">LivaTy</a>
+        <a href="index.html" class="logo">LivaTy</a>
         <nav class="navbar">
-            <a href="#">Cafés</a>
-            <a href="#">Chás</a>
-            <a href="#">Incensos</a>
+            <a href="cafes.html">Cafés</a>
+            <a href="chas.html">Chás</a>
+            <a href="incensos.html">Incensos</a>
 
         </nav>
         <nav class="navbar2">
-            <a href=""><i class='bx bx-search'></i></a>
-            <a href=""><i class='bx bx-cart'></i></a>
-            <a href="/forms.html"><i class='bx bxs-user-circle'></i></a>
+            <a href="#"><i class='bx bx-search'></i></a>
+            <a href="carrinho.html"><i class='bx bx-cart'></i></a>
+            <a href="forms.html"><i class='bx bxs-user-circle'></i></a>
     </header>
+
+    <section class="section">
+        <div class="wrapper">
+            <div class="logreg-box">
+
+                <!--Login-->
+                <div class="form-box login">
+                    <div class="logreg-titulo">
+                        <h2>Login</h2>
+                        <p>Faça o login ou cadastre-se</p>
+                    </div>
+
+                    <form action="#">
+                        <div class="input-box">
+                            <span class="icon"><i class='bx bx-envelope'></i></span>
+                            <input type="email" required>
+                            <label>E-mail</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon"><i class='bx bx-lock-alt'></i></span>
+                            <input type="password" required>
+                            <label>Senha</label>
+                        </div>
+                        <div class="lembrar-senha">
+                            <label for=""><input type="checkbox">Lembrar-me</label>
+                            <a href="#">Esqueceu sua senha?</a>
+                        </div>
+                        <button type="submit" class="btn">Logar</button>
+                        <div class="logreg-link">
+                            <p>Ainda não tem uma conta? <a href="#" class="resgitro-link">Cadastre-se aqui.</a></p>
+                        </div>
+                    </form>
+                </div>
+
+                <!--Cadastro-->
+                <div class="form-box registro">
+                    <div class="logreg-titulo">
+                        <h2>Cadastro</h2>
+                        <p>Preencha o cadastro com suas informações</p>
+                    </div>
+
+                    <form action="#">
+                        <div class="input-box">
+                            <span class="icon"><i class='bx bx-user'></i></span>
+                            <input type="text" required>
+                            <label>Nome de Usuário</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon"><i class='bx bx-envelope'></i></span>
+                            <input type="email" required>
+                            <label>E-mail</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon"><i class='bx bx-lock-alt'></i></span>
+                            <input type="password" required>
+                            <label>Senha</label>
+                        </div>
+                        <div class="lembrar-senha">
+                            <label for=""><input type="checkbox">Estou ciente dos termos e condições</label>
+                        </div>
+                        <button type="submit" class="btn">Cadastrar</button>
+                        <div class="logreg-link">
+                            <p>Já é cadastrado? <a href="#" class="login-link">Faça login.</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="opcao-midia">
+                <a href="#">
+                    <i class='bx bxl-google'></i>
+                    <span>Continue with Google</span>
+                </a>
+                <a href="#">
+                    <i class='bx bxl-facebook-circle'></i>
+                    <span>Continue with Facebook</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script src="styles.js"></script>
 </body>
 
 </html>
