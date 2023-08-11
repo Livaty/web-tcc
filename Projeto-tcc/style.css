@@ -27,6 +27,11 @@
     z-index: 100;
   }
 
+  .header img{
+    width: 150px;
+    padding-top: 13px;
+  }
+
   .logo {
     font-size: 2rem;
     color: white;
